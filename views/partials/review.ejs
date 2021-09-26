@@ -1,0 +1,15 @@
+<section class="container__element">
+  <div class="container__title"><h2>REVIEWS</h2></div>
+  <article class="item__reviews">
+
+    <% for(i = 0; i < 3; i++) { %>
+    <div class="container__review">
+      <img src= <%= img %> />
+      <div class="review">
+        <h3><%= profile %></h3>
+        <p><%= desc %></p>
+      </div>
+    </div>
+    <% } %>
+  </article>
+</section>
