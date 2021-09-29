@@ -1,0 +1,16 @@
+
+footer {
+    display: flex;
+    background-color: var(--roxo-claro);
+    height: 10vh;
+    justify-content: end;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+footer nav a {
+    text-decoration: none;
+    margin: 0 2vw;
+    color: var(--branco);
+    font-weight: bold;
+}
