@@ -29,7 +29,8 @@ body {
     background-color: var(--roxo-claro);
     height: 8vh;
     width: 80vw;
-    margin-top: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
     border-radius: 16px;
 }
 .container__title h2{
@@ -53,7 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 17vh;
     margin-bottom: 2vh;
     position: relative;
 }
@@ -83,5 +84,6 @@ body {
 
 .container__review {
     width: 20vw;
+    margin-top: 15vh;
 }
 }

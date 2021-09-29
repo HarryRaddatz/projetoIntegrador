@@ -2,12 +2,12 @@
   <div class="container__title"><h2>REVIEWS</h2></div>
   <article class="item__reviews">
 
-    <% for(i = 0; i < 3; i++) { %>
+    <% for(review of reviews) { %>
     <div class="container__review">
-      <img src= <%= img %> />
+      <img src= <%= review.img %> />
       <div class="review">
-        <h3><%= profile %></h3>
-        <p><%= desc %></p>
+        <h3><%= review.profile %></h3>
+        <p><%= review.desc %></p>
       </div>
     </div>
     <% } %>

@@ -1,4 +1,4 @@
-@import url('cores.css');
+
 
 .primeiro-bloco {
     display: flex;
@@ -26,6 +26,7 @@
 
 .login__container h2 {
     font-size: 36px;
+    margin-bottom: 3vh;
 }
 
 .login__link {
@@ -34,10 +35,23 @@
 
 .login__input {
     border-radius: 6px;
+    height: 6vh;
+    color: var(--roxo-claro);
+}
+
+.login__input::placeholder {
+    color: var(--roxo-claro);
+    text-align: center;
+
 }
 
 .login__button {
     border-radius: 6px;
     color: var(--branco);
     background-color: var(--roxo-claro);
+    width: 10vw;
+    height: 5vh;
+    align-self: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }

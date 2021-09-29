@@ -1,4 +1,4 @@
-@import url('cores.css');
+
 
 body {
     background-color: var(--cinza-escuro);
@@ -12,7 +12,6 @@ body {
     height: 90px;
     margin-left: 2rem;
 }
-
 
 .cabecalho .container {
     display: flex;

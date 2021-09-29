@@ -1,0 +1,32 @@
+.item_functions{
+    width: 170px;
+    border-radius: 100%;
+    margin: 1vh 0;
+    border: 2px solid var(--cinza-escuro)
+}
+
+.container__items {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.container__items ul ol [data-descr]:before {
+    content: attr(data-descr);
+    position: absolute;
+    background-color: aqua;   
+}
+
+@media only screen and (min-width: 564px) 
+{
+    .container__items  {
+        display: flex;
+        flex-flow: row;
+        position: relative;
+    }
+    .item_functions{
+        width: 170px;
+        border-radius: 100%;
+        margin: 1vh 8vw;
+    }
+}
