@@ -1,27 +1,26 @@
-
-
 .primeiro-bloco {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin-top: 4rem;
-
+    align-items: center;
 }
 
-.primeiro-blocoimagem {
-    width: 500px;
-    height: 340px;
+.primeiro-bloco__imagem {
+    width: 80vw;
+    height: auto;
 }
 
 .login__container {
     display: flex;
     flex-direction: column;
     background-color: var(--cinza-claro);
-    width: 300px;
-    height: 340px;
+    width: 80vw;
+    height: 50vh;
     color: var(--roxo-claro);
     padding: 1rem;
     text-align: center;
     border-radius: 20px;
+    margin-top: 2vh;
 }
 
 .login__container h2 {
@@ -34,7 +33,7 @@
 }
 
 .login__input {
-    border-radius: 6px;
+    border-radius: 10px;
     height: 6vh;
     color: var(--roxo-claro);
 }
@@ -49,7 +48,7 @@
     border-radius: 6px;
     color: var(--branco);
     background-color: var(--roxo-claro);
-    width: 10vw;
+    width: 30vw;
     height: 5vh;
     align-self: center;
     margin-top: 2vh;
