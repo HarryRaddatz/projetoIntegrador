@@ -55,3 +55,8 @@
     margin-top: 2vh;
     margin-bottom: 1vh;
 }
+
+.password__link {
+    font-size: 12px;
+    font-weight: bold;
+}
