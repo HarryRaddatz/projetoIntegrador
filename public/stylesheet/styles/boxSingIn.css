@@ -30,6 +30,7 @@
 
 .login__link {
     text-decoration: none;
+    color: var(--roxo-claro);
 }
 
 .login__input {
@@ -58,4 +59,24 @@
 .password__link {
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
+    color: var(--roxo-claro);
+}
+
+@media screen and (min-width: 574px){
+    .primeiro-bloco{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .primeiro-bloco__imagem{
+        width: 30vw;
+    }
+    .login__container{
+        width: 300px;
+        height: 325px;
+        margin: 0 16px;
+    }
+    .login__button{
+        width: 117px;
+    }
 }
