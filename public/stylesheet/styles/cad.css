@@ -1,0 +1,67 @@
+.cadastro__container {
+   
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--cinza-claro);
+    width: 50vw ;
+    height: 70vh;
+    color: var(--roxo-claro);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2vh;
+    align-items: center;
+    justify-self: center;
+}
+
+.cadastro__container h2 {
+    font-size: 36px;
+    margin-bottom: 3vh;
+}
+
+.cadastro__link {
+    text-decoration: none;
+    color: var(--roxo-claro);
+}
+
+.cadastro__input {
+    border-radius: 10px;
+    height: 6vh;
+    color: var(--roxo-claro);
+    width: 40vw;
+    text-align: center;
+}
+
+.cadastro__input::placeholder {
+    color: var(--roxo-claro);
+    text-align: center;
+
+}
+
+.cadastro__button {
+    border-radius: 6px;
+    color: var(--branco);
+    background-color: var(--roxo-claro);
+    width: 30vw;
+    height: 5vh;
+    align-self: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+#cadastro__dateBorn {
+    width: 15vw;
+    align-self: center;
+}
+
+#cadastro__nome{
+    width: 19vw;
+    margin: 1vh 0;
+}
+
+#container__cadastro__nome {
+    display: flex;
+    flex-flow: row;
+    width: 40vw;
+   justify-content: space-between;  
+}
