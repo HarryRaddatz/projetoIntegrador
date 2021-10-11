@@ -11,12 +11,13 @@
     border-radius: 20px;
     margin-top: 2vh;
     align-items: center;
-    justify-self: center;
+    align-self: center;
 }
 
 .cadastro__container h2 {
     font-size: 36px;
     margin-bottom: 3vh;
+    align-items: center;
 }
 
 .cadastro__link {
@@ -30,6 +31,7 @@
     color: var(--roxo-claro);
     width: 40vw;
     text-align: center;
+    margin: 0.5vh;
 }
 
 .cadastro__input::placeholder {
@@ -54,10 +56,6 @@
     align-self: center;
 }
 
-#cadastro__nome{
-    width: 19vw;
-    margin: 1vh 0;
-}
 
 #container__cadastro__nome {
     display: flex;

@@ -1,12 +1,10 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express'),
+router = express.Router(), 
+contrlCad = require('../controller/controllerCad');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.render('cadastro', {
-    title: 'aba de cadastro',
-    style: 'stylesheet/cadastro.css'
-  })
-});
+router.get('/', contrlCad.index);
+
+router.post('/', contrlCad.newCadastro);
 
 module.exports = router;

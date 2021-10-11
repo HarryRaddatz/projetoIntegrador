@@ -1,21 +1,21 @@
 <%- include('./partials/header') %>
 
-<div>
-    <div class="cadastro__container">
-        <h2>CADASTRO</h2>
-        <div id='container__cadastro__nome'>
-            <input id= "cadastro__nome" class="cadastro__input" type="text" placeholder="NOME"><br>
-            <input id= "cadastro__nome" class="cadastro__input" type="text" placeholder="SOBRENOME"><br>
-        </div>
-            <input class="cadastro__input" type="text" placeholder="CONTA RIOT"><br>
+<div class="cadastro__container">
+  <h2>CADASTRO</h2>
+  <form method="post" action="/cadastro" autocomplete="on">
+  <input id="cadastro__nome" class="cadastro__input" name="nomeCompleto" type="text" placeholder="Nome" autocomplete="name"  required/><br />
 
-            <input class="cadastro__input" type="password" placeholder="SENHA"><br>
-            <input class="cadastro__input" type="password" placeholder="CONFIRMAÇÃO DE SENHA"><br>
+  <input class="cadastro__input" type="text" name="nickname" autocomplete="nickname" placeholder="Conta Riot" required/><br/>
+  <input class="cadastro__input" type="email" name="email" placeholder="example@example.com" autocomplete="email"/><br/>
 
-            <p>Data de Nascimento</p><input  id="cadastro__dateBorn" class="cadastro__input" type="DATE"><br>
-            <button class="cadastro__button">Confirmar Cadastro</button>
-       
-    </div>
+  <input class="cadastro__input" type="password" name="senha" placeholder="Senha" autocomplete="new-password" /><br/>
+  <input class="cadastro__input" type="password" name="confirmSenha" placeholder="Confirmação de Senha" required/><br />
+
+  <label for="dateBorn">Data de Nascimento</label>
+  <input id="cadastro__dateBorn" nome="dateBorn" class="cadastro__input" type="DATE" autocomplete="bday"/><br/>
+
+  <button class="cadastro__button"  value="enviar" type="submit">Confirmar Cadastro</button>
+</form>
 </div>
 
 <%- include('./partials/footer') %>
