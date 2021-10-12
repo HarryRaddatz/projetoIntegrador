@@ -2,20 +2,23 @@
 
 <div class="cadastro__container">
   <h2>CADASTRO</h2>
-  <form method="post" action="/cadastro" autocomplete="on">
+
+<form method="post" action="/cadastro" autocomplete="on">
+  <h3>Dados pessoais</h3>
   <input id="cadastro__nome" class="cadastro__input" name="nomeCompleto" type="text" placeholder="Nome" autocomplete="name"  required/><br />
-
-  <input class="cadastro__input" type="text" name="nickname" autocomplete="nickname" placeholder="Conta Riot" required/><br/>
   <input class="cadastro__input" type="email" name="email" placeholder="example@example.com" autocomplete="email"/><br/>
-
+  <label for="dateBorn" alt="Data de Nascimento">Data de Nascimento</label>
+  <input id="cadastro__dateBorn" name="dateBorn" class="cadastro__input" type="DATE" placeholder="Nascimento" autocomplete="bday"/><br/>
+  <br>
+  <h3>Dados de conta</h3>
+  <input class="cadastro__input" type="text" name="nickname" autocomplete="nickname" placeholder="Conta Riot" required/><br/>
   <input class="cadastro__input" type="password" name="senha" placeholder="Senha" autocomplete="new-password" /><br/>
   <input class="cadastro__input" type="password" name="confirmSenha" placeholder="Confirmação de Senha" required/><br />
 
-  <label for="dateBorn">Data de Nascimento</label>
-  <input id="cadastro__dateBorn" nome="dateBorn" class="cadastro__input" type="DATE" autocomplete="bday"/><br/>
 
-  <button class="cadastro__button"  value="enviar" type="submit">Confirmar Cadastro</button>
+  <button class="cadastro__button"  value="Enviar" type="submit">Confirmar Cadastro</button>
 </form>
+
 </div>
 
 <%- include('./partials/footer') %>

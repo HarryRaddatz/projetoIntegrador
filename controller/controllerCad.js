@@ -1,5 +1,5 @@
 const fs = require('fs'),
-
+path = require('path'),
 contrlCad = {
     index: (req, res, next) => {
         res.render('cadastro', {
@@ -8,12 +8,19 @@ contrlCad = {
           })
     }, 
     newCadastro: (req, res, next) => {
-        let { nomeCompleto, nickname, email, senha, confirmSenha, dateBorn } = req.body
-        console.log(`Olá! ${nomeCompleto}, vulgo:${nickname}`)
+        const usuario = fs.readFileSync(path.join(__dirname, '..', 'bd', 'usuariosBd.json'), 'utf-8')
+        let usuariosNew = JSON.parse(usuario),
+        newUsuario = req.body,
+        newID = usuariosNew[usuariosNew.length - 1].id + 1 
+        newUsuario.criado = new Date()
+        newUsuario.id = newID
+        usuariosNew.push(newUsuario)
+        fs.writeFileSync(path.join(__dirname, '..', 'bd', 'usuariosBd.json'), JSON.stringify(usuariosNew))
         res.redirect('/')
-    }
-
+        }
+  
 }
+
 
 
 module.exports = contrlCad
