@@ -5,6 +5,11 @@
     border: 2px solid var(--cinza-escuro)
 }
 
+#functions{
+    color: blanchedalmond;
+    font-family: Roboto;
+}
+
 .container__items {
     display: flex;
     flex-flow: column;

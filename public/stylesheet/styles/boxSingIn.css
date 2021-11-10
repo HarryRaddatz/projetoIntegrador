@@ -63,6 +63,15 @@
     color: var(--roxo-claro);
 }
 
+#slogan{
+    font-family: 'Audiowide', cursive;
+    color: rgb(247, 246, 248);
+    font-size: 50px;
+    font-weight: bold;
+    transform: rotate(-15deg);
+    text-shadow: 0 0 10px #fffdfd, 0 0 20px #f808d8;
+}
+
 @media screen and (min-width: 574px){
     .primeiro-bloco{
         flex-direction: row;
