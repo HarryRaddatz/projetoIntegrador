@@ -8,8 +8,7 @@ contrlCad = {
           })
     }, 
     newCadastro: (req, res, next) => {
-        const usuario = fs.readFileSync(path.join(__dirname, '..', 'bd', 'usuariosBd.json'), 'utf-8')
-        let usuariosNew = JSON.parse(usuario),
+        const usuariosNew = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'bd', 'usuariosBd.json'), 'utf-8')),
         newUsuario = req.body,
         newID = usuariosNew[usuariosNew.length - 1].id + 1 
         newUsuario.criado = new Date()
