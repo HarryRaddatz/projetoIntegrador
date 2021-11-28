@@ -104,6 +104,7 @@ dist
 .tern-port
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_a11400
 <<<<<<< .merge_file_a13216
 .bd/
 =======
@@ -113,3 +114,5 @@ package-lock.json
 =======
 .bd/
 
+=======
+package-lock.json
