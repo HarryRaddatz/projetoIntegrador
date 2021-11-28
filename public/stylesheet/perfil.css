@@ -1,0 +1,329 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: var(--font-ubuntu);
+}
+
+.max-container{
+    width: 1440px;
+}
+
+:root {
+    --main-purple: #8C46B8;
+    --secundary-purple: #9964BB;
+    --dark-purple: #5c1685;
+    --cinza-font: #858585;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+}
+
+/* geral */
+
+body{
+    background-image: url(/public/images/backgorund-profile.png);
+    background-size: cover;
+    background-color: #F0F0F0;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/* nav-bar */
+
+.nav-bar{
+    grid-template-areas:
+    "logo"
+    "search"
+    "perfil";
+    display: grid;
+    grid-template-columns: 15% 60% auto;
+    grid-template-rows: 1fr;
+    height: 80px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img{
+    width: 100px;
+    max-width: 100%;
+}
+
+.search {
+    height: 33px;
+    border-radius: 15px;
+    border: 0;
+    margin-left: 5vw;
+    width: 19.5vw;
+}
+
+.search::placeholder{
+    color: lightslategrey;
+}
+
+.search-input {
+    display: flex;
+}
+
+.search-btn {
+    border: 0px;
+    position: relative;
+    left: -38px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.name-n-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: var(--font-ubuntu);
+    font-weight: 500;
+    color: var(--main-purple);
+    font-size: 1.125rem;
+}
+
+.msg-icon {
+    padding-top: 10px;
+    margin-right: 3vw;
+}
+
+.user-name {
+    margin-right: 0.6vw;
+    padding-top: 14px;
+}
+
+/* menu lateral */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.aside-menu > div{
+    width: 190px;
+    height: 100%;
+    background-color: var(--main-purple);
+    border-radius: 20px;
+}
+
+.itens-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    gap: 10px;
+    }
+
+.menu{
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-purple);
+    list-style: none;
+    font-family: var(--font-ubuntu);
+    color: white;
+    font-size: 18px;
+    max-width: 12vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.menu:hover{
+    background-color: var(--secundary-purple);
+    width: 170px;
+    border-radius: 0px 15px 15px 15px;
+}
+
+li.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu span{
+    margin-left: 45px;
+}
+
+.home::before{
+    content: url("/public/images/icons/icon_home.svg");
+    position: relative;
+    left: 35px;
+}
+
+.perfil::before{
+    content: url("/public/images/icons/icon_profile.svg");
+    position: relative;
+    left: 35px;
+}
+
+.champs::before{
+    content: url("/public/images/icons/icon-League-of-Legends.svg");
+    position: relative;
+    left: 35px;
+}
+
+.stats::before{
+    content: url("/public/images/icons/icon-starts.svg");
+    position: relative;
+    left: 35px;
+}
+
+/* AREA PERFIL */
+
+.main-container {
+    display: flex;
+}
+
+.perfil-container {
+    display: flex;
+    width: 100%;
+    max-width: 1248px;
+    /* gap: 3vw; */
+    /* height: 235px; */
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-perfil{
+    background-image: url(/public/images/profile-place-holder.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 235px;
+    height: 235px;
+    border: solid 5px var(--main-purple);
+    border-radius: 155px;
+    margin-left: 40px;
+}
+
+.rank{
+    max-width: 360px;
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rank:hover{
+    box-shadow: 10px 5px 5px rgb(175, 175, 175);
+    transition: 0.5s;
+}
+
+.diamante {
+    height: 112px;
+    margin: 20px;
+}
+
+.platina {
+    height: 112px;
+    margin: 20px;
+}
+
+.infos-rank{
+    color: var(--cinza-font);
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.infos-rank-solo > li:nth-child(2) {
+    color: #8C46B8;
+}
+
+.infos-rank-flex > li:nth-child(2) {
+    color: #4cbf4c;
+}
+
+.frame-top {
+    display: flex;
+    width: 100%;
+    gap: 55px;
+    align-items: center;
+}
+
+.frame-bottom {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.foto-champion{
+    height: 476px;
+    margin: 20px 0px 0px 40px;
+}
+
+/* CHAT-BOX */
+
+.chat-box{
+    width: 100%;
+    max-width: 360px;
+    height: 558px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    right: 138px;
+}
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 89px;
+    /* background-color: transparent; */
+    align-items: center;
+    font-family: var(--font-ubuntu);
+    font-weight: 500;
+    color: var(--main-purple);
+    background: linear-gradient(90deg,  rgba(0,0,255,0), rgba(255, 255, 255, 0.8), rgba(0,0,255,0) 90%);
+}
+
+footer span{
+    font-size: 20px;
+}
+
+footer ul li{
+    cursor: pointer;
+}
+
+.sobre:hover{
+    color: var(--dark-purple);
+}
+
+.contato:hover{
+    color: var(--dark-purple);
+}
+
+.projeto:hover{
+    color: var(--dark-purple);
+}
+
+.footer-frame{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-frame > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.footer-frame li{
+    list-style: none;
+}
