@@ -1,9 +1,9 @@
 :root {
-    --roxo-claro: #6E0E9B;
-    --roxo-escuro: #38094F;
-    --cinza-escuro: #28262E;
-    --preto: #171717;
-    --cinza-claro: #C4C4C4;
-    --branco: #FCF5FF;
-    font-family: 'Roboto', sans-serif;
+  --roxo-claro: #6e0e9b;
+  --roxo-escuro: #38094f;
+  --cinza-escuro: #28262e;
+  --preto: #171717;
+  --cinza-claro: #c4c4c4;
+  --branco: #fcf5ff;
+  font-family: "Roboto", sans-serif;
 }
