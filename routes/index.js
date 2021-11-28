@@ -5,24 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('home', { style: '../../public/assets/styles/loginNSing.css',
     title: 'Projeto Integrador',
-    reviews: [{ img: 'images/default.jpg',
-    profile: 'Lorem ipsum dolor sit amet',
-    desc: 'Lorem ipsum dolor sit amet.'
-  },
-  { img: 'images/default.jpg',
-    profile: 'Lorem ipsum dolor sit amet',
-    desc: 'Lorem ipsum dolor sit amet.'
-  },
-  { img: 'images/default.jpg',
-    profile: 'Lorem ipsum dolor sit amet',
-    desc: 'Lorem ipsum dolor sit amet.'
-  },
-  { img: 'images/default.jpg',
-    profile: 'Lorem ipsum dolor sit amet',
-    desc: 'Lorem ipsum dolor sit amet.'
-  }
-]
+    style: 'stylesheet/home.css'
+})
 });
-});
+
 
 module.exports = router;

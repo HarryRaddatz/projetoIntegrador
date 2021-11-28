@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet/home.css">
-    <link rel="stylesheet" href=<%= style %>>
+    <link rel="stylesheet" href= <%= style %>>
     <title><%= title %></title>
 </head>
 <body>
@@ -17,11 +16,14 @@
             alt="Logo do site"
             class="cabecalho__logo"
           />
-  
-          <nav class="cabecalho__navegacao">
-            <a class="cabecalho__link" href="#">SOBRE NÓS</a>
-            <a class="cabecalho__link" href="#">COMUNIDADE</a>
-            <a class="cabecalho__link" href="#">CRIAR CONTA</a>
-          </nav>
+          
+          <div class="cabecalho__navegacao">
+            <nav class="cabecalho__navegacao">
+              <a class="cabecalho__link" href="/">SOBRE NÓS</a>
+              <a class="cabecalho__link" href="#">COMUNIDADE</a>
+              <a class="cabecalho__link" href="/cadastro">CRIAR CONTA</a>
+            </nav>
+          </div>
+
         </div>
       </header>

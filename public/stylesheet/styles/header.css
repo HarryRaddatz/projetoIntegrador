@@ -1,27 +1,40 @@
 @import url('cores.css');
 
-body {
-    background-color: var(--cinza-escuro);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+html{
+    background-image: url('../../images/lol.png');
+    background-size: cover;
+}
+
+body {
+    background: rgb(110,14,155);
+    background: radial-gradient(circle, rgba(110,14,155,0.711922268907563) 53%, rgba(110,14,155,0.7651435574229692) 67%, rgba(56,9,79,1) 98%);  
+    display: flex;
+    flex-direction: column;
+}
+
 .cabecalho {
-    background-color: var(--roxo-claro);
+    background-color: var(--roxo-escuro);
 }
 
 .cabecalho__logo {
-    width: 90px;
-    height: 90px;
-    margin-left: 2rem;
+    width: 25vw;
+    height: auto;
 }
 
 
 .cabecalho .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .cabecalho__navegacao {
     display: flex;
+    font-size: 12px;
 }
 
 .cabecalho__link {
@@ -31,3 +44,11 @@ body {
     font-weight: bold;
 }
 
+@media screen and (min-width: 574px){
+    .cabecalho__logo{
+        width: 120px;
+    }
+    .cabecalho .container{
+        justify-content: space-around;
+    }
+}
