@@ -23,7 +23,7 @@
 /* geral */
 
 body{
-    background-image: url(/public/images/backgorund-profile.png);
+    background-image: url(./images/backgorund-profile.png);
     background-size: cover;
     background-color: #F0F0F0;
     background-repeat: no-repeat;
@@ -154,25 +154,25 @@ li.menu{
 }
 
 .home::before{
-    content: url("/public/images/icons/icon_home.svg");
+    content: url("./images/icons/icon_home.svg");
     position: relative;
     left: 35px;
 }
 
 .perfil::before{
-    content: url("/public/images/icons/icon_profile.svg");
+    content: url("./images/icons/icon_profile.svg");
     position: relative;
     left: 35px;
 }
 
 .champs::before{
-    content: url("/public/images/icons/icon-League-of-Legends.svg");
+    content: url("./images/icons/icon-League-of-Legends.svg");
     position: relative;
     left: 35px;
 }
 
 .stats::before{
-    content: url("/public/images/icons/icon-starts.svg");
+    content: url("./images/icons/icon-starts.svg");
     position: relative;
     left: 35px;
 }
@@ -195,7 +195,7 @@ li.menu{
 }
 
 .foto-perfil{
-    background-image: url(/public/images/profile-place-holder.png) ;
+    background-image: url(./images/profile-place-holder.png) ;
     background-repeat: no-repeat;
     background-position: center;
     width: 235px;
