@@ -3,10 +3,12 @@
   <img class="primeiro-bloco__imagem" src="images/default.jpg">
   <div class="login__container">
       <h2>LOGIN</h2>
-          <input class="login__input" type="text" placeholder="USERNAME"><br>
-          <input class="login__input" type="password" placeholder="SENHA"><br>
+          <form method="post" action="/profile" autocomplete="on">
+          <input class="login__input" type="email" placeholder="E-mail" name="email"><br>
+          <input class="login__input" type="password" placeholder="Senha" name="senha"><br>
           <a href="#" class="password__link">Esqueci minha senha</a><br>
-          <button class="login__button">ENTRAR</button>
+          <button class="login__button" type="submit">ENTRAR</button>
+          </form>
           <a href="/cadastro" class="login__link">Ainda não tem conta? Cadastre-se</a>
   </div>
 </div>

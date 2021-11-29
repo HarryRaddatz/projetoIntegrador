@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express'),
+router = express.Router(),
+contrlLogin = require('../controller/controllerLogin'),
+validatorLogin = require('../midleware/validatorLogin')
+
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.render('profileLog')
-});
+router.get('/', contrlLogin.index);
+router.post('/',validatorLogin.index, validatorLogin.next, contrlLogin.logado);
+
 
 module.exports = router;
