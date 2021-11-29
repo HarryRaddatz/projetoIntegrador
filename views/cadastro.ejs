@@ -1,5 +1,7 @@
 <%- include('./partials/header') %>
-
+<% if(errors){ for(error of errors){ %>
+<h1><%= error.msg %></h1>
+ <% }} %>
 <div class="cadastro__container">
   <h2>CADASTRO</h2>
 
