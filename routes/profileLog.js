@@ -5,8 +5,8 @@ validatorLogin = require('../midleware/validatorLogin')
 
 
 /* GET users listing. */
-router.get('/', contrlLogin.index);
-router.post('/',validatorLogin.index, validatorLogin.next, contrlLogin.logado);
+// router.get('/', contrlLogin.index);
+// router.post('/',validatorLogin.index, validatorLogin.next, contrlLogin.logado);
 
 
 module.exports = router;
