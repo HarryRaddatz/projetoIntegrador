@@ -1,26 +1,21 @@
-const fs = require('fs'),
-path = require('path'),
+const repositoryUser = require("../bd/repository/userCRUD");
+const apiRiot = require("../lib/apiRiot");
+
 contrlCad = {
-    index: (req, res, next) => {
-        res.render('cadastro', {
-            title: 'Cadastre-se',
-            style: 'stylesheet/cadastro.css'
-          })
-    }, 
-    newCadastro: (req, res, next) => {
-        const usuario = fs.readFileSync(path.join(__dirname, '..', 'bd', 'usuariosBd.json'), 'utf-8')
-        let usuariosNew = JSON.parse(usuario),
-        newUsuario = req.body,
-        newID = usuariosNew[usuariosNew.length - 1].id + 1 
-        newUsuario.criado = new Date()
-        newUsuario.id = newID
-        usuariosNew.push(newUsuario)
-        fs.writeFileSync(path.join(__dirname, '..', 'bd', 'usuariosBd.json'), JSON.stringify(usuariosNew))
-        res.redirect('/')
-        }
-  
-}
+  index: (req, res, next) => {
+    res.render("cadastro", {
+      title: "Cadastre-se",
+      style: "stylesheet/cadastro.css",
+    });
+  },
+  newCadastro: async ({ body }, res, next) => {
+    let riotDates = await apiRiot.getSummuner(body);
+    body.nickname = riotDates.id;
+    body.favoriteChampion = await apiRiot.getChampions(riotDates.id);
+    console.log(body);
+    await repositoryUser.create(body);
+    res.redirect("/");
+  },
+};
 
-
-
-module.exports = contrlCad
+module.exports = contrlCad;
